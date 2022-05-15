@@ -1,0 +1,104 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/darkmessiah/magic/arms/MR_add_"
+	"$model" 1
+	"$SEPARATEALPHATEXTURE" "models/darkmessiah/magic/arms/skin_freeze"
+
+	"$bumpmap" "models/darkmessiah/magic/arms/skin_freeze_normal"
+
+	"$texscale" 	"[1 1]"
+	"$translate"	1
+
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0
+
+	"$translucent" 1
+
+	"$envmapsaturation" 1.5
+	
+
+	"$envmaptint" "[1 1 1]"
+	"$selfillum" 1
+
+	"$envmap" "models/darkmessiah/magic/arms/env_iceglove"
+
+	"vertexlitgeneric_HDR_dx9"
+		{
+			"$envmap" "models/darkmessiah/magic/arms/env_iceglove_hdr_"
+			"$envmaptint" "[.6 .6 .6]"
+		
+		"Proxies"
+			{
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[0]"
+			"sineperiod" 3
+			"sinemin" .8
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[1]"
+			"sineperiod" 3
+			"sinemin" 0.6
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[2]"
+			"sineperiod" 3
+			"sinemin" 0.6
+
+			"sinemax" 1
+		}
+
+			"sine"
+				{
+					"sineperiod" .37
+					"sinemin" 1
+					"sinemax" 1
+					"resultvar" "$alpha"
+				}
+			"AnimatedTexture"
+	
+				{
+					"animatedtexturevar" "$basetexture"
+					"animatedtextureframenumvar" "$frame"
+					"animatedtextureframerate" 25.00
+				}
+
+
+			}
+		
+		
+		
+		
+		}
+
+	
+	"Proxies"
+	{
+
+
+	"sine"
+		{
+			"sineperiod" .37
+			"sinemin" .95
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	"AnimatedTexture"
+	
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+
+
+	}
+
+}

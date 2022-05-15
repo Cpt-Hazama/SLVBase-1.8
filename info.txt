@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"			"SLVBase"
+	"version"		"1.8"
+	"up_date"		"2012-03-13"
+	"author_name"		"Silverlan"
+	"author_email"		"Silverlan@gmx.de"
+	"author_url"		""
+	"info"			"Base for Silverlan's addons"
+}
